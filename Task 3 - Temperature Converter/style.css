@@ -1,42 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 *{
     margin: 0;
     padding: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
 }
       
 .container {
     width: 100%;
     height: 100vh;
-    background-image:linear-gradient(45deg,rgb(255, 255, 255), rgb(255, 0, 0));
-    display: flex;
+    display : flex;
     flex-direction: column;
+    border-radius: 15px;
     justify-content: center;
-    align-items: center;
-    box-shadow: 0px 3px 15px rgba(113, 115, 119, 0.5);
+    align-items : center;
+    box-shadow : 0px 10px 25px rgb(35, 33, 33);
+    background-image: url("images/bg1.jpg   ")
 }  
 .container h1 {
     color: rgb(0, 0, 0);
+    margin: 50px;
+    text-decoration: underline;
     padding: 20px;
+    border-radius: 15px;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 50px;
     text-align: center;
-    box-shadow:3px 6px 20px rgba(0, 85, 255, 0.9);
+    box-shadow:0px 6px 25px 10px rgb(0, 238, 255);
 }
   
 .converter-row {
     display: flex;
-    width: 40%;
+    width:60%;
     justify-content: space-between;
     align-items: center;
-    background: rgb(0, 21, 255);
+    background-image: linear-gradient(to right, rgb(0, 153, 255), rgba(255,0,0,1));
     border-radius: 10px;
     padding: 50px 20px;
     cursor: pointer;
-    box-shadow: 0px 3px 15px rgba(113, 115, 119, 0.5);
+    border-style: double inset outset outset;
+    border-left: 4px solid red;
+    border-right: 4px solid rgb(0, 153, 255);
+    border-bottom: 4px solid red;
+    border-top: 4px solid rgb(0, 183, 255);
+    box-shadow: 0px 2px 8px 10px aqua;
 }
-      
 .col {
     flex-basis: 32%;
+    display: inline;
     text-align: center;
     cursor: pointer;
 }
@@ -46,14 +57,15 @@
     font-weight: 500;
     margin-bottom: 30px;
     color: #fff;
+    text-shadow: 0 0 15px #ff0000, 0 0 20px #0000ff;
     cursor: pointer;
 }
       
 .col input {
-    width: 150px;
-    height: 30px;
+    width: 250px;
+    height: 50px;
     background: white;
-    border-radius: 5px;
+    border-radius: 20px;
     text-align: center;
     cursor: pointer;
 }
